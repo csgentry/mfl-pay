@@ -24,9 +24,9 @@
     .wrap {
       min-height:100vh;
       display:flex;
-      justify-content:center;       /* top-aligned content */
+      justify-content:center;
       align-items:flex-start;
-      padding:20px 16px 24px;       /* small top padding */
+      padding:20px 16px 24px;       /* tight top spacing */
     }
     .card {
       width:100%; max-width:420px;
@@ -58,23 +58,31 @@
     <div class="card">
       <div class="logo">
         <!-- Uses your uploaded filename -->
-        <img src="./73BA5207-C516-4F6D-96D5-9A51C14B9E13.png?v=5" alt="MFL logo">
+        <img src="./73BA5207-C516-4F6D-96D5-9A51C14B9E13.png?v=6" alt="MFL logo">
       </div>
 
       <p class="note">Choose a payment option below:</p>
 
       <div class="list">
-        <!-- Apple Pay via iMessage (prefilled note; user taps Apple Cash in Messages) -->
-        <a class="item" href="sms:+13175077258?&body=Hey%20Cody,%20sending%20%2420%20for%20MFL%20entry%20fee.">Apple Pay</a>
+        <!-- Apple Pay via iMessage (prefilled message; user taps Apple Cash in Messages) -->
+        <a class="item" href="sms:+13175077258?&body=Hey%20Cody,%20here%27s%20%2420%20for%20the%20MFL%20entry%20fee.%20%F0%9F%8F%88">
+          Apple Pay
+        </a>
 
-        <!-- Venmo prefilled for $20 -->
-        <a class="item" href="https://venmo.com/CSGentry?txn=pay&amount=20&note=MFL%20Entry%20Fee" target="_blank" rel="noopener">Venmo</a>
+        <!-- Venmo: $20 + memo = football emoji -->
+        <a class="item" href="https://venmo.com/CSGentry?txn=pay&amount=20&note=%F0%9F%8F%88" target="_blank" rel="noopener">
+          Venmo
+        </a>
 
-        <!-- PayPal prefilled for $20 -->
-        <a class="item" href="https://paypal.me/CodyGentry/20" target="_blank" rel="noopener">PayPal</a>
+        <!-- PayPal: direct to $20 send screen -->
+        <a class="item" href="https://www.paypal.com/paypalme/CodyGentry/20" target="_blank" rel="noopener">
+          PayPal
+        </a>
 
-        <!-- Cash App prefilled for $20 -->
-        <a class="item" href="https://cash.app/$CGentry212/20" target="_blank" rel="noopener">Cash App</a>
+        <!-- Cash App: direct to $20 (memo isn’t reliably prefillable via URL) -->
+        <a class="item" href="https://cash.app/$CGentry212/20" target="_blank" rel="noopener">
+          Cash App
+        </a>
       </div>
 
       <footer>© 2025 Midwest Fantasy League</footer>
