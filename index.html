@@ -4,7 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MFL Payments</title>
-  <meta name="description" content="Payment links for the Midwest Fantasy League entry fee.">
+  <meta name="description" content="Pay your entry fee quickly via Apple Pay, Venmo, PayPal, or Cash App.">
+
+  <!-- Open Graph / Link Preview -->
+  <meta property="og:title" content="Midwest Fantasy League Payments" />
+  <meta property="og:description" content="Pay your entry fee quickly via Apple Pay, Venmo, PayPal, or Cash App." />
+  <meta property="og:image" content="https://csgentry.github.io/mfl-pay/73BA5207-C516-4F6D-96D5-9A51C14B9E13.png" />
+  <meta property="og:url" content="https://csgentry.github.io/mfl-pay/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card (also used by iMessage previews) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Midwest Fantasy League Payments" />
+  <meta name="twitter:description" content="Pay your entry fee quickly via Apple Pay, Venmo, PayPal, or Cash App." />
+  <meta name="twitter:image" content="https://csgentry.github.io/mfl-pay/73BA5207-C516-4F6D-96D5-9A51C14B9E13.png" />
+
+  <link rel="canonical" href="https://csgentry.github.io/mfl-pay/" />
+
   <style>
     :root {
       --bg:#0b1b3b;
@@ -26,7 +42,7 @@
       display:flex;
       justify-content:center;
       align-items:flex-start;
-      padding:20px 16px 24px;
+      padding:20px 16px 24px; /* tight top */
     }
     .card {
       width:100%; max-width:420px;
@@ -57,13 +73,14 @@
   <div class="wrap">
     <div class="card">
       <div class="logo">
-        <img src="./73BA5207-C516-4F6D-96D5-9A51C14B9E13.png?v=7" alt="MFL logo">
+        <!-- Uses your existing PNG filename -->
+        <img src="./73BA5207-C516-4F6D-96D5-9A51C14B9E13.png?v=8" alt="MFL logo">
       </div>
 
       <p class="note">Choose a payment option below:</p>
 
       <div class="list">
-        <!-- Apple Pay without football emoji -->
+        <!-- Apple Pay via iMessage (no emoji in message) -->
         <a class="item" href="sms:+13175077258?&body=Hey%20Cody,%20here%27s%20%2420%20for%20the%20MFL%20entry%20fee.">
           Apple Pay
         </a>
