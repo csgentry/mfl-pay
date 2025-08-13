@@ -1,101 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MFL Payments</title>
-  <meta name="description" content="Payment links for the Midwest Fantasy League entry fee.">
-  <style>
-    :root {
-      --bg:#0b1b3b;
-      --card:#0f2652;
-      --text:#ffffff;
-      --muted:#C9D4EA;
-      --btn:#ffffff;
-      --btnText:#0b1b3b;
-      --hover:#f4f6fb;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin:0;
-      background:var(--bg);
-      color:var(--text);
-      font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-    }
-    .wrap {
-      min-height:100vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:20px 16px;
-    }
-    .card {
-      width:100%;
-      max-width:420px;
-      background:linear-gradient(180deg,var(--card),#0a1c42);
-      border:1px solid rgba(255,255,255,0.08);
-      border-radius:16px;
-      padding:20px;
-      box-shadow:0 12px 32px rgba(0,0,0,.35);
-      text-align:center;
-    }
-    .logo img {
-      width:160px;
-      height:auto;
-      display:block;
-      margin:0 auto 8px;
-    }
-    .fee-sub {
-      color:var(--muted);
-      font-size:14px;
-      margin-bottom:16px;
-    }
-    .list { display:grid; gap:12px; }
-    .item {
-      display:block;
-      text-decoration:none;
-      background:var(--btn);
-      color:var(--btnText);
-      border-radius:999px;
-      padding:14px 16px;
-      font-weight:700;
-      letter-spacing:.2px;
-      transition:background .2s ease;
-    }
-    .item:hover { background:var(--hover); }
-    footer {
-      margin-top:16px;
-      color:var(--muted);
-      font-size:12px;
-    }
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    <div class="card">
-      <div class="logo">
-        <img src="./73BA5207-C516-4F6D-96D5-9A51C14B9E13.png?v=4" alt="MFL logo">
-      </div>
-
-      <div class="fee-sub">Choose a payment option below:</div>
-
-      <div class="list">
-        <a class="item" href="sms:+13175077258?&body=Hey%20Cody,%20sending%20%2420%20for%20MFL%20entry%20fee.">
-          Apple Pay
-        </a>
-        <a class="item" href="https://venmo.com/CSGentry?txn=pay&amount=20&note=MFL%20Entry%20Fee" target="_blank" rel="noopener">
-          Venmo
-        </a>
-        <a class="item" href="https://paypal.me/CodyGentry/20" target="_blank" rel="noopener">
-          PayPal
-        </a>
-        <a class="item" href="https://cash.app/$CGentry212/20" target="_blank" rel="noopener">
-          Cash App
-        </a>
-      </div>
-
-      <footer>© 2025 Midwest Fantasy League</footer>
-    </div>
-  </div>
-</body>
-</html>
+<style>
+  :root {
+    --bg:#0b1b3b;
+    --card:#0f2652;
+    --text:#ffffff;
+    --muted:#C9D4EA;
+    --btn:#ffffff;
+    --btnText:#0b1b3b;
+    --hover:#f4f6fb;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  }
+  .wrap {
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    padding:40px 16px 20px; /* Top padding reduced */
+  }
+  .card {
+    width:100%;
+    max-width:420px;
+    background:linear-gradient(180deg,var(--card),#0a1c42);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:16px;
+    padding:20px;
+    box-shadow:0 12px 32px rgba(0,0,0,.35);
+    text-align:center;
+  }
+  .logo img {
+    width:160px;
+    height:auto;
+    display:block;
+    margin:0 auto 8px;
+  }
+  .fee-sub {
+    color:var(--muted);
+    font-size:14px;
+    margin-bottom:16px;
+  }
+  .list { display:grid; gap:12px; }
+  .item {
+    display:block;
+    text-decoration:none;
+    background:var(--btn);
+    color:var(--btnText);
+    border-radius:999px;
+    padding:14px 16px;
+    font-weight:700;
+    letter-spacing:.2px;
+    transition:background .2s ease;
+  }
+  .item:hover { background:var(--hover); }
+  footer {
+    margin-top:16px;
+    color:var(--muted);
+    font-size:12px;
+  }
+</style>
