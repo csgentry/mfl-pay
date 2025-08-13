@@ -1,57 +1,79 @@
-<div class="logo">
-  <img src="./mfl_logo.png?v=2" alt="MFL logo" style="width:220px;height:auto;image-rendering:auto;">
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MFL Payments</title>
+  <meta name="description" content="Payment links for the Midwest Fantasy League entry fee.">
+  <style>
+    :root {
+      --bg: #0b1b3b;    /* navy */
+      --card:#0f2652;
+      --text:#ffffff;
+      --muted:#C9D4EA;
+      --btn:#ffffff;
+      --btnText:#0b1b3b;
+      --hover:#f4f6fb;
+      --accent:#d81e05; /* red */
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--bg); color:var(--text);
+           font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif; }
+    .wrap { min-height:100vh; display:grid; place-items:center; padding:28px 16px; }
+    .card { width:100%; max-width:720px; background:linear-gradient(180deg,var(--card),#0a1c42);
+            border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:24px;
+            box-shadow:0 12px 32px rgba(0,0,0,.35); }
+    .logo { display:flex; justify-content:center; margin-bottom:12px; }
+    .logo img { width:200px; height:auto; }
+    h1 { text-align:center; margin:8px 0 6px; font-size:22px; letter-spacing:.2px; }
+    p.lead { text-align:center; color:var(--muted); margin:0 0 18px; font-size:14px; }
 
-<h1>Midwest Fantasy League</h1>
-<p class="lead">Entry fee: <strong>$20</strong>. Choose a payment option:</p>
+    .list { display:grid; gap:12px; }
+    .item { display:flex; align-items:center; justify-content:space-between;
+            background:var(--btn); color:var(--btnText); border:1px solid rgba(0,0,0,.06);
+            border-radius:12px; padding:14px 16px; text-decoration:none; font-weight:700; }
+    .item:hover { background:var(--hover); }
+    .left { display:flex; gap:10px; align-items:center; }
+    .pill { font-size:12px; color:#fff; background:var(--accent); padding:4px 10px; border-radius:999px; }
+    .hint { color:var(--muted); font-size:12px; text-align:center; margin-top:14px; }
+    footer { margin-top:18px; text-align:center; color:var(--muted); font-size:12px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="logo">
+        <img src="./73BA5207-C516-4F6D-96D5-9A51C14B9E13.png?v=2" alt="MFL logo">
+      </div>
 
-<div class="btns">
-  <!-- Apple (opens iMessage with note prefilled) -->
-  <a class="btn" href="sms:+13175077258?&body=Hey%20Cody,%20sending%20$20%20for%20MFL%20entry%20fee.">
-    <span class="icon">
-      <svg viewBox="0 0 64 64" width="32" height="32" aria-hidden="true">
-        <rect width="64" height="64" rx="14" fill="#000"/>
-        <path d="M40 20c-2 0-4 1-5 3s-2 4-1 6c2 0 4-1 5-3s2-4 1-6zM45 35c-1-2-3-4-6-4-3 0-4 1-6 1-2 0-4-1-6-1-4 0-8 4-8 9 0 4 2 8 5 11 2 2 4 3 6 3 2 0 3-1 5-1 2 0 3 1 6 1 2 0 4-1 6-3 2-2 3-4 4-7-3-1-5-4-6-7z" fill="#fff"/>
-      </svg>
-    </span>
-    <span class="label">Apple Pay via iMessage</span>
-    <span class="pill">Open Messages</span>
-  </a>
+      <h1>Midwest Fantasy League</h1>
+      <p class="lead">Entry fee: <strong>$20</strong>. Choose a payment option:</p>
 
-  <!-- Venmo -->
-  <a class="btn" href="https://venmo.com/CSGentry?txn=pay&amount=20&note=MFL%20Entry%20Fee" target="_blank" rel="noopener">
-    <span class="icon">
-      <svg viewBox="0 0 64 64" width="32" height="32" aria-hidden="true">
-        <rect width="64" height="64" rx="14" fill="#3D95CE"/>
-        <path d="M20 20h10l-6 24h10l10-24h10l-12 32H18L20 20z" fill="#fff" opacity=".96"/>
-      </svg>
-    </span>
-    <span class="label">Venmo</span>
-    <span class="pill">$20</span>
-  </a>
+      <div class="list">
+        <a class="item" href="sms:+13175077258?&body=Hey%20Cody,%20sending%20$20%20for%20MFL%20entry%20fee.">
+          <span class="left">Apple Pay (iMessage)</span>
+          <span class="pill">Open Messages</span>
+        </a>
 
-  <!-- PayPal -->
-  <a class="btn" href="https://paypal.me/CodyGentry/20" target="_blank" rel="noopener">
-    <span class="icon">
-      <svg viewBox="0 0 64 64" width="32" height="32" aria-hidden="true">
-        <rect width="64" height="64" rx="14" fill="#003087"/>
-        <path d="M20 18h14c8 0 12 4 12 10s-4 10-12 10h-8l-3 14h-9l6-34z" fill="#fff" opacity=".96"/>
-        <path d="M22 32h12c5 0 8-3 8-7s-3-7-8-7h-9l-3 14z" fill="#009CDE" opacity=".92"/>
-      </svg>
-    </span>
-    <span class="label">PayPal</span>
-    <span class="pill">$20</span>
-  </a>
+        <a class="item" href="https://venmo.com/CSGentry?txn=pay&amount=20&note=MFL%20Entry%20Fee" target="_blank" rel="noopener">
+          <span class="left">Venmo</span>
+          <span class="pill">$20</span>
+        </a>
 
-  <!-- Cash App -->
-  <a class="btn" href="https://cash.app/$CGentry212/20" target="_blank" rel="noopener">
-    <span class="icon">
-      <svg viewBox="0 0 64 64" width="32" height="32" aria-hidden="true">
-        <rect width="64" height="64" rx="14" fill="#00C244"/>
-        <path d="M32 14c-6 0-10 3-11 7l9 1c0-2 1-3 3-3 2 0 3 1 3 2 0 2-2 3-6 4-6 2-9 5-9 9 0 5 4 8 9 9v4h6v-4c5-1 8-4 9-8l-9-1c0 2-2 3-4 3-2 0-3-1-3-2 0-2 2-3 6-4 6-2 9-5 9-9 0-6-5-8-12-8z" fill="#fff" opacity=".96"/>
-      </svg>
-    </span>
-    <span class="label">Cash App</span>
-    <span class="pill">$20</span>
-  </a>
-</div>
+        <a class="item" href="https://paypal.me/CodyGentry/20" target="_blank" rel="noopener">
+          <span class="left">PayPal</span>
+          <span class="pill">$20</span>
+        </a>
+
+        <a class="item" href="https://cash.app/$CGentry212/20" target="_blank" rel="noopener">
+          <span class="left">Cash App</span>
+          <span class="pill">$20</span>
+        </a>
+      </div>
+
+      <p class="hint">Apple Pay uses iMessage (Apple Cash). The button opens a text to your number with the note prefilled.</p>
+      <footer>© 2025 Midwest Fantasy League</footer>
+    </div>
+  </div>
+</body>
+</html>
